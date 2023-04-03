@@ -1,9 +1,9 @@
 <?php
 // paramètres de connexion à la base de données
-$host = '10.5.40.71';
-$dbname = 'DatabaseMail';
+$host = 'localhost';
+$dbname = 'TPBINOME';
 $username = 'root';
-$password = '1234';
+$password = '';
 
 // tentative de connexion à la base de données en utilisant PDO
 try {
