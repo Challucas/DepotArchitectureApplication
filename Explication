@@ -1,0 +1,13 @@
+Base de données pour le TP Binome:
+
+CREATE TABLES users(
+id int PIRMARY KEY AUTO_INCREMENT,
+email text
+);
+
+Dans le dossier TPBinome, vous trouverez le TP fait en binome.
+A l'intérieur de celui-ci, il y a 2 dossiers (client et srv), les deux dossiers peuvent être mis sur un serveur commun ou ils peuvent être séparer. Pour cela,
+il faut que les deux dossiers soient sur des serveurs appartenant au même réseau et dans le dossier client et le fichier app.js, remplacer à la ligne 8 : 
+fetch('../srv/bdd.php', {  par fetch('ipserveur/srv/bdd.php',   (ipserveur est l'ip du serveur contenant le fichier bdd.php)
+
+Les paramêtres de connexion à la base de données sont dans le dossier srv et le fichier bdd.php, ils sont à changer en fonction de la base de données.
